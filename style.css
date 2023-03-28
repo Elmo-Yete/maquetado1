@@ -10,11 +10,12 @@ body{
 
 nav {
     position: sticky;
-    top: 3px;
-    background: transparent;
-    padding: 3px;
+    top: 0px;
+    padding: 2px;
     text-align: center;
     border-bottom: 1px solid black;
+    z-index: 100;
+    background: gray;
 }
 
 ul {
@@ -22,7 +23,7 @@ ul {
     margin: 0;
     padding: 0;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 li {
@@ -48,21 +49,64 @@ a:hover {
 
 .texto1 {
     display: inline-block;
-    padding: 10px;
+    padding: 1px;
     margin-left: 10px;
+    transform: translate(5px,5%);
+    text-align: center;
+    white-space: pre-line;
+    margin: 1px;
 }
 
 .btt-compra {
     background: orange;
-    display:flex;
-    width: 150px;
-    height: auto;
     border-radius: 15px;
+    display:flex;
+    transform: translate(155%,40%);
+    text-align: center;
+    height: auto;
+    width: 150px;
 }
 
 .img-der {
     position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-3%, 20%);
+}
+
+.img-der img {
     display: inline-block;
-    margin: 0 0 40px 200 px;
-    max-width: 50px;
+    max-height:500px;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.rectan {
+    background: black;
+    bottom: 0;
+    display:inline-block;
+    height: 300px;
+    position: inherit;
+    transform: translate(-50.5%,150px);
+    left: 50%;
+    width: 100%;
+}
+
+.txt-enrect {
+    display: inline-block;
+    padding: 10px;
+    transform: translate(140%,-150%);
+    text-align: center;
+    white-space: pre-line;
+    color: yellow;
+    position: relative;
+    white-space: nowrap;
+}
+
+.txt-enrect h2{
+    margin-bottom: 0;
+}
+
+.txt-enrect p{
+    margin-top: 0;
 }
