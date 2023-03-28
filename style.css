@@ -95,7 +95,7 @@ a:hover {
 .txt-enrect {
     display: inline-block;
     padding: 10px;
-    transform: translate(140%,-150%);
+    transform: translate(75%,-150%);
     text-align: center;
     white-space: pre-line;
     color: yellow;
@@ -109,4 +109,34 @@ a:hover {
 
 .txt-enrect p{
     margin-top: 0;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    transform: translate(5%,-130%);
+}
+
+.numeros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    font-size: 40px;
+}
+
+.valor-numero {
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.texto-numero{
+    font-size: 30px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 4px;
 }
